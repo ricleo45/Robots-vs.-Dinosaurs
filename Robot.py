@@ -10,3 +10,4 @@ class Robot:
         Dinosaur.health -= self.weapon.attack_power
         print(f'{Dinosaur.name} is down :{Dinosaur.health} !!!')
 
+
