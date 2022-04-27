@@ -1,4 +1,4 @@
-from weapons import Weapon
+from Weapons import Weapon
 
 class Robot:
     def __init__(self, name):

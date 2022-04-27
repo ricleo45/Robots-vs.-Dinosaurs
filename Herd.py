@@ -1,4 +1,4 @@
-from dinosaur import Dinosaur
+from Dinosaur import Dinosaur
 
 class Herd:
     def __init__(self):
@@ -6,9 +6,9 @@ class Herd:
       self.dino_list()
  
     def dino_list(self):
-        dino1 = Dinosaur('t-rex')
-        dino2 = Dinosaur('velociraptor')
-        dino3 = Dinosaur('giant-chicken')
+        dino1 = Dinosaur('t-rex', 50)
+        dino2 = Dinosaur('velociraptor', 50)
+        dino3 = Dinosaur('giant-chicken', 50)
 
         self.Dinosaur.append(dino1)
         self.Dinosaur.append(dino2)

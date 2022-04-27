@@ -1,9 +1,27 @@
 # import Fleet and Herd
-from fleet import Fleet
-from herd import Herd
+from Dinosaur import Dinosaur
+from Fleet import Fleet
+from Herd import Herd
 
-herd = Herd()
-fleet = Fleet()
+class Battlefield:
+    def __init__(self) -> None:
+        self.fleet = Fleet()
+        self.herd = Herd()
+
+    def run_game(self):
+        self.welcome()
+        self.battle()
+        self.show_winner()
+
+    def welcome(self):
+        print('Welsome to Robots vs Dinosaurs')
+    
+    def get_random_number(ran_number):
+        return random.choice(ran_number)
+    
+    def battle():
+        while len(self.herd.Dinosaurs) > 0 and len(self.fleet.robots) > 0:
+            
 """ 
 def __init__(self):
     self.run_game 
