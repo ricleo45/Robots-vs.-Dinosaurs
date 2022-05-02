@@ -1,5 +1,5 @@
-from fleet import Fleet
-from herd import Herd
+from Fleet import Fleet
+from Herd import Herd
 import random
 
 class Battlefield:
@@ -36,7 +36,7 @@ class Battlefield:
         print('')
         self.herd.dinosaurs[dino_choice].attack(
             self.fleet.robots[robot_choice])
-        if self.fleet.robots[robot.choice].healtch <= 0:
+        if self.fleet.robots[robot_choice].health <= 0:
             print(f'{self.fleet.robots[robot_choice].name} has died!')
             self.fleet.robots.remove(self.fleet.robots[robot_choice])
     
@@ -54,4 +54,21 @@ class Battlefield:
             self.herd.dinosaurs.remove(self.herd.dinosaur[dino_choice])
     
     def show_dino_opponent_options(self):
-        
+        print('Choose your Dinosaur!')
+        index = 0
+        for dinosaur in self.herd.dinosaurs:
+            print(f'Press {index} for {dinosaur.name} with {dinosaur.health} health')
+            index += 1
+    
+    def show_robot_opponent_options(self):
+        print('Choose your robot!')
+        index = 0
+        for robot in self.fleet.robots:
+            print(f'Press {index} for {robot.name} wtih {robot.health} health.')
+            index += 1
+
+    def display_winners(self):
+        if len(self.fleet.robots) > len(self.herd.dinosaurs):
+            print('Robots Win...')
+        else:
+            print('Dinosaurs Win...')

@@ -1,4 +1,4 @@
-from dinosaur import Dinosaur
+from Dinosaur import Dinosaur
 
 class Herd:
     def __init__(self):
