@@ -1,8 +1,16 @@
-# list of robots
+from robot import Robot
 
+class Fleet:
+    def __init__(self):
+        self.robots = []
+        self.create_fleet()
 
-# initialize
-def __init__(self, robot_list):
-    robot_list = ['Toaster', 'Vacuum', 'Dishwasher']
-    self.robot_list = robot_list
+    def create_fleet(self):
+        robot1 = Robot('Beeper')
+        robot2 = Robot('Clicker')
+        robot3 = Robot('Bopper')
+
+        self.robots.append(robot1)
+        self.robots.append(robot2)
+        self.robots.append(robot3)
 

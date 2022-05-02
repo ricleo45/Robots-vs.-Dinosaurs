@@ -1,5 +1,4 @@
-from weapons import Weapon
+from battlefield import Battlefield
 
-toaster = Weapon('toaster', 25)
-print(toaster)
-
+game = Battlefield()
+game.run_game()

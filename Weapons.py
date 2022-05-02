@@ -5,8 +5,8 @@ class Weapon:
         self.power = attack_power
 
     def __str__(self) -> str:
-        return f'using a {self.name}'
+        return f'using {self.name}'
 
-hammer = Weapon('Toast', 25)
-
-print(hammer)
+hammer = Weapon('Hammer', 25)
+sword = Weapon('Sword', 25)
+laser = Weapon('Laser', 25)
