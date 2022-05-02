@@ -51,7 +51,7 @@ class Battlefield:
             self.herd.dinosaurs[dino_choice])
         if self.herd.dinosaurs[dino_choice].health <= 0:
             print(f'{self.herd.dinosaurs[dino_choice].name} has died!')
-            self.herd.dinosaurs.remove(self.herd.dinosaur[dino_choice])
+            self.herd.dinosaurs.remove(self.herd.dinosaurs[dino_choice])
     
     def show_dino_opponent_options(self):
         print('Choose your Dinosaur!')

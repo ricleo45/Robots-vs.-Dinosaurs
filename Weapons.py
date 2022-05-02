@@ -2,7 +2,7 @@ class Weapon:
     
     def __init__(self, name, attack_power):
         self.name = name
-        self.power = attack_power
+        self.attack_power = attack_power
 
     def __str__(self) -> str:
         return f'using {self.name}'
